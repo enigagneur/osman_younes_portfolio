@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Osman Younes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="toggle" onclick="toggleMenu();"></div>
+
+      <section class="banner" id="home">
+          <div class="imgSidebar">
+              <img src="images/bg.jpg">
+          </div>
+          <div class="contentBx">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span> I'm</h4>
+                <h2>Younes Osman</h2>
+                <h4>I'm  a Cloud Developer.</h4>
+                <p>Hello, I'm 22 years old and I'm a software Engineer from ENSEEIHT Toulouse. I like to Create Web, Mobile and Cloud Applications. Below, You can access to my Github LinkedIn and Instagram.</p>
+                <a href="#about" class="btn">About me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://github.com/enigagneur"><img class="github" src="images/github.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/younes-osman-86874883/"><img class="linkedin" src="images/linkedin.png"></a></li>
+                <li><a href="https://www.instagram.com/younesosman6/"><img src="images/instagram.png"></a></li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="about" id="about">
+          <div class="title white">
+              <h2>About Me</h2>
+              <p>Resume.</p>
+          </div>
+          <div class="content">
+              <div class="textBx">
+                  <p>You can view my resume here.</p>
+                  <a href="images/YounesOsmanCV.pdf" class="btn">View Resume</a>
+              </div>
+              <div class="imgBx">
+                  <img src="images/bg1.jpg">
+              </div>
+          </div>
+      </section>
+
+
+      <section class="work" id="work">
+          <div class="title">
+              <h2>Recent Creations</h2>
+              <p>Below, You can see my creations in Cloud, Mobile and Web Domains.</p>
+          </div>
+          <div class="content">
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="https://learnk8s.io/a/a00824c07c47eacaa1f1d9a988720986.svg">
+                  </div>
+                  <div class="textBx">
+                      <h3>Kubernetes Automation</h3>
+                      <a href="https://github.com/enigagneur/kubernetes-automatisation" class="btn">View Project</a>
+                  </div>
+              </div>
+              <div class="workBx">
+                <div class="imgBx">
+                    <img src="https://www.gataka.fr/wp-content/uploads/2019/04/monitoring.jpeg">
+                </div>
+                <div class="textBx">
+                    <h3>Monitoring App</h3>
+                    <a href="https://github.com/enigagneur/ProjetFinal" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/05/11/40/diamond-316610_1280.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Jewelry Website</h3>
+                    <a href="https://dounia-jowelry-997c7.web.app/" class="btn">View Project</a>
+
+                </div>
+            </div>
+
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="title white">
+            <h2>Contact Us</h2>
+            <p>For more info about me, feel free to contact me.</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="First Name">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+            </div>
+        <div class="row">
+            <div class="col50">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <div class="col50">
+                <input type="text" name="" placeholder="Mobile No.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col100">
+                <textarea placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col100">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </div>
+
+      </section>
+      <div class="copyright">
+        <p>Copyright © 2021 Younes Osman. All Rights Reserved.</p>
+    </div>
+
+      <div class="sidebar">
+          <ul class="menu">
+              <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+              <li><a href="#about" onclick="toggleMenu();">About</a></li>
+              <li><a href="#work" onclick="toggleMenu();">Creations</a></li>
+              <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+          </ul>
+      </div>
+
+      <script>
+          function toggleMenu(){
+              const menuToggle = document.querySelector('.toggle')
+              const sidebar = document.querySelector('.sidebar')
+              menuToggle.classList.toggle('active')
+              sidebar.classList.toggle('active')
+
+          }
+      </script>
+    
+  </body>
+</html>
